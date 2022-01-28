@@ -1,0 +1,8 @@
+
+
+
+docker image build --tag td/app .
+
+docker run -d --name app_c --network mynet -p 8888:8888 td/app
+
+docker build -t mongo:latest
